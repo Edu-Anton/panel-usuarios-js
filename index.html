@@ -5,8 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/a631fbff5c.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  
+  <div class="wrapper">
+    <nav class="sidebar"></nav>
+    <div class="primary">
+      <header>
+          <i class="fas fa-bars"></i>
+          <button class="btn" id="js_btnOpen">Agregar Usuario</button>
+      </header>
+      <main class="content">
+        <div class="card__container">
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__img" src="img/avatar-default.png" alt="">
+            </figure>
+            <p class="card__name">Nombre</p>
+            <p>Teléfono | Email</p>
+            <p class="card__country">País</p>
+            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum deleniti exercitationem rem, ea aliquid nihil recusandae facili.</p>
+            <div class="card__action">
+                <i class="fas fa-pen"></i>
+              <span class="card__action__text">Edit</span>
+            </div>
+            <div class="card__action card__action--right">
+              <i class="fas fa-times"></i>
+              <span class="card__action__text">Delete</span>
+            </div>
+        </div>
+      </main>
+
+      <div class="modal__wrapper">
+        <div class="modal">
+          <div class="modal__header">
+            <h2>Crear Usuario</h2>
+          </div>
+          <div class="modal__body">
+            <!-- <form action=""> -->
+              <input class="userForm__input" id="userForm__name" type="text" placeholder="Nombre">
+              <input class="userForm__input" id="userForm__lastname" type="text" placeholder="Apellido">
+              <input class="userForm__input" id="userForm__mail" type="text" placeholder="Correo">
+              <input class="userForm__input" id="userForm__phone" type="text" placeholder="Teléfono">
+              <input class="userForm__input" id="userForm__country" type="text" placeholder="País">
+              <input class="userForm__input" id="userForm__url" type="text" placeholder="Url de Fotografía">
+              <textarea class="userForm__input" name="" id="userForm__description" cols="30" rows="10" placeholder="Sobre mí"></textarea>
+              
+            <!-- </form> -->
+          </div>
+          <div class="modal__footer">
+              <button id="userForm__btn" class="btn">Aceptar</button>
+              <button id="userForm__btn-cancelar" class="btn">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
